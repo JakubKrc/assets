@@ -29,6 +29,7 @@ import TableCellRendererSharedWith from "@hubleto/react-ui/core/TableCellRendere
 // extended hubleto react ui components
 import ErpSearch from "@hubleto/react-ui/ext/ErpSearch";
 import FormExtended from "@hubleto/react-ui/ext/FormExtended";
+import Tree from "@hubleto/react-ui/core/Tree";
 import TableExtended from "@hubleto/react-ui/ext/TableExtended";
 import TableExtendedColumnCustomize from "@hubleto/react-ui/ext/TableExtendedColumnsCustomize";
 
@@ -75,6 +76,7 @@ class HubletoErp extends HubletoReactUi {
     this.registerReactComponent('Search', ErpSearch);
     this.registerReactComponent('Form', FormExtended);
     this.registerReactComponent('Table', TableExtended);
+    this.registerReactComponent('Tree', Tree);
     this.registerReactComponent('TableColumnsCustomize', TableExtendedColumnCustomize);
     this.registerReactComponent('Chart', Chart);
 
