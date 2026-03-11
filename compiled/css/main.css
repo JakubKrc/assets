@@ -789,9 +789,6 @@
   .h-28 {
     height: calc(var(--spacing) * 28);
   }
-  .h-32 {
-    height: calc(var(--spacing) * 32);
-  }
   .h-40 {
     height: calc(var(--spacing) * 40);
   }
@@ -989,9 +986,6 @@
   }
   .w-60 {
     width: calc(var(--spacing) * 60);
-  }
-  .w-64 {
-    width: calc(var(--spacing) * 64);
   }
   .w-72 {
     width: calc(var(--spacing) * 72);
@@ -1947,12 +1941,6 @@
       background-color: color-mix(in oklab, var(--color-primary) 10%, transparent);
     }
   }
-  .bg-primary\/20 {
-    background-color: color-mix(in srgb, #4780bf 20%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-primary) 20%, transparent);
-    }
-  }
   .bg-purple-500 {
     background-color: var(--color-purple-500);
   }
@@ -2142,9 +2130,6 @@
   }
   .pt-0 {
     padding-top: calc(var(--spacing) * 0);
-  }
-  .pt-2 {
-    padding-top: calc(var(--spacing) * 2);
   }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
@@ -5072,6 +5057,21 @@
       color: var(--color-gray-100);
     }
   }
+  aside#default-sidebar > div.second-sidebar .btn.btn-primary-outline {
+    &:where(.dark, .dark *) {
+      background-color: transparent;
+    }
+  }
+  aside#default-sidebar > div.second-sidebar .btn.btn-primary-outline .text {
+    &:where(.dark, .dark *) {
+      color: var(--color-gray-100);
+    }
+  }
+  aside#default-sidebar > div.second-sidebar .btn.btn-primary-outline .icon {
+    &:where(.dark, .dark *) {
+      color: var(--color-gray-100);
+    }
+  }
   nav#default-navbar {
     position: fixed;
     inset-inline-start: calc(var(--spacing) * 0);
@@ -6564,28 +6564,6 @@ body #ajax-loader::before {
     }
   }
   .btn.btn-dropdown.open > .menu > .list .btn:hover {
-    &:where(.dark, .dark *) {
-      background-color: var(--color-slate-600);
-    }
-  }
-  .btn.btn-dropdown:focus-within {
-    border-color: var(--color-gray-100) !important;
-    background-color: var(--color-gray-100) !important;
-    color: var(--color-gray-800) !important;
-  }
-  .btn.btn-dropdown:focus-within > .menu {
-    visibility: visible !important;
-  }
-  .btn.btn-dropdown:focus-within > .menu > .list .btn {
-    text-wrap: nowrap !important;
-    &:where(.dark, .dark *) {
-      background-color: var(--color-slate-800);
-    }
-    &:where(.dark, .dark *) {
-      color: var(--color-white);
-    }
-  }
-  .btn.btn-dropdown:focus-within > .menu > .list .btn:hover {
     &:where(.dark, .dark *) {
       background-color: var(--color-slate-600);
     }
