@@ -43,6 +43,7 @@ class HubletoErp extends HubletoReactUi {
   userEmail: string = '';
   isPremium: boolean = false;
   user: any;
+  users: any;
   apps: any = {};
 
   constructor(config: any) {
@@ -85,6 +86,14 @@ class HubletoErp extends HubletoReactUi {
   }
 
   init() {
+    request.post(
+      'api/get-users',
+      {},
+      {},
+      (data: any) => {
+        this.users = data;
+      }
+    );
     for (let appNamespace in this.apps) {
       // console.log('Init app ' + appNamespace);
       this.apps[appNamespace].init();
