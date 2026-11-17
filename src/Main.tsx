@@ -32,7 +32,7 @@ import InputImage from "@hubleto/react-ui/components/fc/Inputs/Image";
 import InputHyperlink from "@hubleto/react-ui/components/fc/Inputs/Hyperlink";
 import InputUserSelect from "@hubleto/react-ui/components/fc/Inputs/UserSelect";
 import InputSharedWith from "@hubleto/react-ui/components/fc/Inputs/SharedWith";
-import InputAttendees from "@hubleto/react-ui/components/fc/Inputs/Attendees";
+import InputMultipleUsers from "@hubleto/react-ui/components/fc/Inputs/MultipleUsers";
 import InputWysiwyg from "@hubleto/react-ui/components/cc/Inputs/Wysiwyg";
 import InputTextareaWithHtmlPreview from "@hubleto/react-ui/components/fc/Inputs/TextareaWithHtmlPreview";
 import InputJson from "@hubleto/react-ui/components/cc/Inputs/Json";
@@ -74,7 +74,7 @@ try {
       this.registerReactComponent('InputHyperlink', InputHyperlink);
       this.registerReactComponent('InputUserSelect', InputUserSelect);
       this.registerReactComponent('InputSharedWith', InputSharedWith);
-      this.registerReactComponent('InputAttendees', InputAttendees);
+      this.registerReactComponent('InputMultipleUsers', InputMultipleUsers);
       this.registerReactComponent('InputWysiwyg', InputWysiwyg);
       this.registerReactComponent('InputTextareaWithHtmlPreview', InputTextareaWithHtmlPreview);
       this.registerReactComponent('InputJson', InputJson);
